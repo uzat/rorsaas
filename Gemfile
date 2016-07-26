@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use Postgresql as the database for ActiveRecord
 gem 'pg', '~> 0.18.2'
+gem 'devise'
+gem 'milia'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,3 +48,6 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+gem 'recaptcha', require: 'recaptcha/rails'
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'

@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
+  skip_before_action :authenticate_tenant!, :only => [ :index ]
+
   def index
-    @greeting = "We're green to go!"
   end
 end
